@@ -34,6 +34,11 @@
 * remoteDriverUrl (url address from selenoid or grid)
 * videoStorage (url address where you should get video)
 
+### Пример запуска теста
+</br>
+![test-example2](https://user-images.githubusercontent.com/84721020/127873408-ff2af3d7-9117-457c-8592-a80001b60fe1.gif)
+
+
 
 Запуск тестов с remote.properties:
 ```bash
