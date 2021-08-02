@@ -36,8 +36,11 @@
 
 ### Пример запуска теста на Selenoid
 </br>
+![test-example3](https://user-images.githubusercontent.com/84721020/127874294-f583531d-dca5-42b7-82eb-267e9172b489.gif)
 
-![test-example2](https://user-images.githubusercontent.com/84721020/127873408-ff2af3d7-9117-457c-8592-a80001b60fe1.gif)
+### Allure отчет
+</br>
+![allure-test](https://user-images.githubusercontent.com/84721020/127874570-340eb1d7-5348-4c0b-a2fc-941ad98df22e.JPG)
 
 
 
