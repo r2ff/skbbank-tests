@@ -3,6 +3,7 @@ package tests;
 import com.codeborne.selenide.Condition;
 import helpers.DriverUtils;
 import io.qameta.allure.Description;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
@@ -46,6 +47,7 @@ public class SkbBankTests extends TestBase {
     }
 
     @Test
+    @Disabled
     @DisplayName("Проверить консоль браузера на наличие ошибок")
     void consoleShouldNotHaveErrorsTest() {
         step("Открыть 'https://skbbank.ru/'", () ->
