@@ -47,7 +47,6 @@ public class SkbBankTests extends TestBase {
     }
 
     @Test
-    @Disabled
     @DisplayName("Проверить консоль браузера на наличие ошибок")
     void consoleShouldNotHaveErrorsTest() {
         step("Открыть 'https://skbbank.ru/'", () ->
