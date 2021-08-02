@@ -34,13 +34,21 @@
 * remoteDriverUrl (url address from selenoid or grid)
 * videoStorage (url address where you should get video)
 
-### Пример запуска теста на Selenoid
-</br>
+### В качестве CI/CD используется Jenkins </br>
+![jenkins-build](https://user-images.githubusercontent.com/84721020/127875803-7a40bc61-4e25-48be-80e8-4151b674e553.JPG)
+
+### Пример запуска теста на Selenoid </br>
+
 ![test-example3](https://user-images.githubusercontent.com/84721020/127874294-f583531d-dca5-42b7-82eb-267e9172b489.gif)
 
-### Allure отчет
-</br>
+### Allure отчет </br>
+#### Общая информация
 ![allure-test](https://user-images.githubusercontent.com/84721020/127874570-340eb1d7-5348-4c0b-a2fc-941ad98df22e.JPG)
+#### Список тестов
+![allure-test2](https://user-images.githubusercontent.com/84721020/127875182-c950377a-412b-43d1-b69e-e226e8e4d8da.JPG)
+
+### Уведомления в телеграм о результатах теста
+![telegram-bot](https://user-images.githubusercontent.com/84721020/127876037-e8a40367-cfd1-454b-b756-8e4b1bae047a.JPG)
 
 
 
