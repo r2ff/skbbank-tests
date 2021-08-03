@@ -47,8 +47,11 @@
 #### Список тестов
 ![allure-test2](https://user-images.githubusercontent.com/84721020/127875182-c950377a-412b-43d1-b69e-e226e8e4d8da.JPG)
 
-### Уведомления в телеграм о результатах теста
+### Уведомления в telegram о результатах теста
 ![telegram-bot](https://user-images.githubusercontent.com/84721020/127876037-e8a40367-cfd1-454b-b756-8e4b1bae047a.JPG)
+
+### Уведомления в slack о результатах теста
+![slack-bot](https://user-images.githubusercontent.com/84721020/128090650-4712592d-ffc6-4da9-8348-264c8a16d6fc.JPG)
 
 
 
