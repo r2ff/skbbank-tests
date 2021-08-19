@@ -1,8 +1,10 @@
 package tests;
 
+import annotations.Layer;
 import com.codeborne.selenide.Condition;
 import helpers.DriverUtils;
 import io.qameta.allure.Description;
+import io.qameta.allure.Owner;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -17,7 +19,8 @@ import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 
-
+@Owner("Alexey")
+@Layer("web")
 public class SkbBankTests extends TestBase {
     @Test
     @DisplayName("Проверка перехода страницу на \"Вклады\" с главной страницы")
