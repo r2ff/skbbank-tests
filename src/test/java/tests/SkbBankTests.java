@@ -4,9 +4,11 @@ import annotations.Layer;
 import com.codeborne.selenide.Condition;
 import helpers.DriverUtils;
 import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
 
@@ -21,8 +23,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @Owner("Alexey")
 @Layer("web")
+@Feature("Вклады")
 public class SkbBankTests extends TestBase {
     @Test
+    @Tag("web")
     @DisplayName("Проверка перехода страницу на \"Вклады\" с главной страницы")
     void openDepositTabFromMainPageTest() {
         step("Открываем https://skbbank.ru/", () -> {
@@ -36,6 +40,7 @@ public class SkbBankTests extends TestBase {
     }
 
     @Test
+    @Tag("web")
     @DisplayName("Проверка заголовка страницы")
     void checkTitleTextTest() {
         step("Открыть 'https://skbbank.ru/'", () ->
@@ -50,6 +55,7 @@ public class SkbBankTests extends TestBase {
     }
 
     @Test
+    @Tag("web")
     @DisplayName("Проверить консоль браузера на наличие ошибок")
     void consoleShouldNotHaveErrorsTest() {
         step("Открыть 'https://skbbank.ru/'", () ->
@@ -64,6 +70,7 @@ public class SkbBankTests extends TestBase {
     }
 
     @Test
+    @Tag("web")
     @DisplayName("Открыть страницу вклада \"Обыкновенное чудо\"")
     void openDepositAnOrdinaryMiracleTest() {
         step("Открыть страницу вкладов 'https://skbbank.ru/'", () -> {
@@ -77,6 +84,7 @@ public class SkbBankTests extends TestBase {
     }
 
     @Test
+    @Tag("web")
     @DisplayName("Проверка чекбокса при открытии вклада \"Обыкновенное чудо\" онлайн")
     void checkInterestRateWithOnlineOpeningDepositTest() {
         step("Открыть страницу вклада \"Обыкновенное чудо\"", () -> {
@@ -92,6 +100,7 @@ public class SkbBankTests extends TestBase {
 
 
     @Test
+    @Tag("web")
     @DisplayName("Проверка чекбокса при открытии вклада \"Обыкновенное чудо\" в офисе")
     void checkInterestRateWithOpeningDepositInOfficeTest() {
         step("Открыть страницу вклада \"Обыкновенное чудо\"", ()
@@ -107,6 +116,7 @@ public class SkbBankTests extends TestBase {
     }
 
     @Test
+    @Tag("web")
     @DisplayName("Проверка чекбокса капитализация процентов")
     void checkCheckBoxCapitalizationOfInterestWithDefaultSettingsTest() {
         step("Открыть страницу вклада \"Обыкновенное чудо\"", ()
@@ -124,6 +134,7 @@ public class SkbBankTests extends TestBase {
     }
 
     @Test
+    @Tag("web")
     @DisplayName("Проверка ввода суммы с клавиатуры")
     void checkEnteringAmountOfMoneyWithKeyboard() {
         step("Открыть страницу вклада \"Обыкновенное чудо\"", ()
@@ -141,6 +152,7 @@ public class SkbBankTests extends TestBase {
     }
 
     @Test
+    @Tag("web")
     @DisplayName("Проверка ввода суммы с помощью слайдера")
     void checkEnteringAmountOfMoneyWithKeyboard2() {
         step("Открыть страницу вклада \"Обыкновенное чудо\"", ()
@@ -158,6 +170,7 @@ public class SkbBankTests extends TestBase {
     }
 
     @Test
+    @Tag("web")
     @DisplayName("Проверка периода вклада")
     void checkTimeOfDepositTest() {
         step("Открыть страницу вклада \"Обыкновенное чудо\"", ()
@@ -172,6 +185,7 @@ public class SkbBankTests extends TestBase {
     }
 
     @Test
+    @Tag("web")
     @DisplayName("Проверить информацию о разделе \"Благотворительность\"")
     void checkCharityTextTest() {
         step("Открыть страницу вклада \"Обыкновенное чудо\"", ()
