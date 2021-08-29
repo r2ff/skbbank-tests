@@ -94,7 +94,7 @@ public class SkbBankTests extends TestBase {
         step("Проверить процентную ставку при онлайн открытии вклада", () -> {
             $(byText("Рассчитать доход по вкладу")).scrollTo();
             $(byText("Открыть онлайн")).click();
-            $(".perc").shouldHave(text("6,7"));
+            $(".perc").shouldHave(text("7,5"));
         });
     }
 
@@ -111,7 +111,7 @@ public class SkbBankTests extends TestBase {
         step("Проверить процентную ставку открытия вклада в офисе", () -> {
             $(byText("Рассчитать доход по вкладу")).scrollTo();
             $("#open_in_office").parent().click();
-            $(".perc").shouldHave(text("6,5"));
+            $(".perc").shouldHave(text("7,1"));
         });
     }
 
@@ -126,9 +126,9 @@ public class SkbBankTests extends TestBase {
 
         step("Проверить работу чекбокса \"Капитализация процентов\"", () -> {
             $(byText("Рассчитать доход по вкладу")).scrollTo();
-            $("#result").shouldHave(text("977"));
+            $("#result").shouldHave(text("1 057"));
             $("#cpital").parent().click();
-            $("#result").shouldHave(text("999"));
+            $("#result").shouldHave(text("1 086"));
 
         });
     }
@@ -146,7 +146,7 @@ public class SkbBankTests extends TestBase {
             $(byText("Рассчитать доход по вкладу")).scrollTo();
             $(byName("summ")).sendKeys(Keys.chord(Keys.CONTROL, "a", Keys.DELETE));
             $(byName("summ")).setValue("20 000").pressEnter();
-            $("#result").shouldHave(text("21 954"));
+            $("#result").shouldHave(text("22 114"));
 
         });
     }
@@ -165,7 +165,6 @@ public class SkbBankTests extends TestBase {
             $(byName("summ")).shouldHave(value("10 000"));
             actions().clickAndHold($(".ui-slider-handle")).moveByOffset(1, 0).release().perform();
             $(byName("summ")).shouldHave(value("2 647 000"));
-            sleep(5000);
         });
     }
 
