@@ -3,6 +3,7 @@ package tests;
 import annotations.JiraIssue;
 import annotations.JiraIssues;
 import annotations.Layer;
+import annotations.TM4J;
 import com.codeborne.selenide.Condition;
 import helpers.DriverUtils;
 import io.qameta.allure.Description;
@@ -29,6 +30,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class SkbBankTests extends TestBase {
     @Test
     @Tag("web")
+    @TM4J("HOM-230")
     @JiraIssues({@JiraIssue("HOM-230")})
     @DisplayName("Проверка перехода страницу на \"Вклады\" с главной страницы")
     void openDepositTabFromMainPageTest() {
@@ -44,6 +46,7 @@ public class SkbBankTests extends TestBase {
 
     @Test
     @Tag("web")
+    @TM4J("HOM-230")
     @JiraIssues({@JiraIssue("HOM-230")})
     @DisplayName("Проверка заголовка страницы")
     void checkTitleTextTest() {
@@ -60,6 +63,7 @@ public class SkbBankTests extends TestBase {
 
     @Test
     @Tag("web")
+    @TM4J("HOM-230")
     @JiraIssues({@JiraIssue("HOM-230")})
     @DisplayName("Проверить консоль браузера на наличие ошибок")
     void consoleShouldNotHaveErrorsTest() {
@@ -76,6 +80,7 @@ public class SkbBankTests extends TestBase {
 
     @Test
     @Tag("web")
+    @TM4J("HOM-230")
     @JiraIssues({@JiraIssue("HOM-230")})
     @DisplayName("Открыть страницу вклада \"Обыкновенное чудо\"")
     void openDepositAnOrdinaryMiracleTest() {
@@ -91,6 +96,7 @@ public class SkbBankTests extends TestBase {
 
     @Test
     @Tag("web")
+    @TM4J("HOM-230")
     @JiraIssues({@JiraIssue("HOM-230")})
     @DisplayName("Проверка чекбокса при открытии вклада \"Обыкновенное чудо\" онлайн")
     void checkInterestRateWithOnlineOpeningDepositTest() {
@@ -108,6 +114,7 @@ public class SkbBankTests extends TestBase {
 
     @Test
     @Tag("web")
+    @TM4J("HOM-230")
     @JiraIssues({@JiraIssue("HOM-230")})
     @DisplayName("Проверка чекбокса при открытии вклада \"Обыкновенное чудо\" в офисе")
     void checkInterestRateWithOpeningDepositInOfficeTest() {
@@ -125,6 +132,7 @@ public class SkbBankTests extends TestBase {
 
     @Test
     @Tag("web")
+    @TM4J("HOM-230")
     @JiraIssues({@JiraIssue("HOM-230")})
     @DisplayName("Проверка чекбокса капитализация процентов")
     void checkCheckBoxCapitalizationOfInterestWithDefaultSettingsTest() {
@@ -144,6 +152,7 @@ public class SkbBankTests extends TestBase {
 
     @Test
     @Tag("web")
+    @TM4J("HOM-230")
     @JiraIssues({@JiraIssue("HOM-230")})
     @DisplayName("Проверка ввода суммы с клавиатуры")
     void checkEnteringAmountOfMoneyWithKeyboard() {
@@ -163,6 +172,7 @@ public class SkbBankTests extends TestBase {
 
     @Test
     @Tag("web")
+    @TM4J("HOM-230")
     @JiraIssues({@JiraIssue("HOM-230")})
     @DisplayName("Проверка ввода суммы с помощью слайдера")
     void checkEnteringAmountOfMoneyWithKeyboard2() {
@@ -181,6 +191,7 @@ public class SkbBankTests extends TestBase {
 
     @Test
     @Tag("web")
+    @TM4J("HOM-230")
     @JiraIssues({@JiraIssue("HOM-230")})
     @DisplayName("Проверка периода вклада")
     void checkTimeOfDepositTest() {
@@ -197,6 +208,7 @@ public class SkbBankTests extends TestBase {
 
     @Test
     @Tag("web")
+    @TM4J("HOM-230")
     @JiraIssues({@JiraIssue("HOM-230")})
     @DisplayName("Проверить информацию о разделе \"Благотворительность\"")
     void checkCharityTextTest() {
