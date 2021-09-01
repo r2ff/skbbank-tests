@@ -1,4 +1,4 @@
-![rest-Assured]()
+
 
 # Автотесты <a target="_blank" href="https:skbbank.ru">skbbank.ru</a>
 
