@@ -1,4 +1,3 @@
-
 # Автотесты <a target="_blank" href="https:skbbank.ru">skbbank.ru</a>
 
 ### Для написания автотестов использовались технологии и инструменты:
@@ -8,13 +7,15 @@
 <img height="40" width="40" src="https://raw.githubusercontent.com/r2ff/r2ff/1cd5ac320c63eada404ddab3cfe71b4fbb5e73b0/svg/java-logo.svg" alt="java">
 <img height="40" width="40" src="https://raw.githubusercontent.com/r2ff/r2ff/1cd5ac320c63eada404ddab3cfe71b4fbb5e73b0/svg/junit5-logo.svg" alt="junit5">
 <img height="40" width="40" src="https://raw.githubusercontent.com/r2ff/r2ff/3294e25e72c2949bd7027cd3d297b619dae42719/svg/selenide-logo.svg" alt="selenide">
+<img height="40" width="40" src="https://user-images.githubusercontent.com/84721020/131733118-67426995-f58b-4f2d-89ce-ab59f0c4a9bc.png" alt="rest-assured">
 <img height="40" width="40" src="https://raw.githubusercontent.com/r2ff/r2ff/1cd5ac320c63eada404ddab3cfe71b4fbb5e73b0/svg/jenkins-logo.svg" alt="jenkins">
 <img height="40" width="40" src="https://raw.githubusercontent.com/r2ff/r2ff/88f137e2bed8e2b9aa3048dd41d68c6adb4a0522/svg/selenoid-logo.svg" alt="selenoid">
 <img height="40" width="40" src="https://raw.githubusercontent.com/r2ff/r2ff/54b7b71e5ab15cea6bc453babf179c93c8b136b2/svg/allure-Report-logo.svg" alt="allure">
 <img height="40" width="40" src="https://raw.githubusercontent.com/r2ff/r2ff/b40f0e55529c51f4234b8c12c6b769ae6d4b9f9c/svg/allure-ee-logo.svg" alt="allure-testops">
 </p>
 
-### Реализованы следующие проверки:
+### Реализованы следующие проверки
+#### UI тесты:
 - [X] - Проверка заголовка страницы
 - [X] - Проверка перехода страницу на "Вклады" с главной страницы
 - [X] - Открыть страницу вклада "Обыкновенное чудо"
@@ -26,10 +27,19 @@
 - [X] - Проверка ввода суммы с помощью слайдера
 - [X] - Проверка ввода суммы с клавиатуры
 
+#### API тесты:
+- [X] - Проверка расчета калькулятора при максимальной сумме
+- [X] - Проверка расчета калькулятора при минимальной сумме
+- [X] - Проверка расчета калькулятора при минимальной сумме, при открытии вклада в офисе
+- [X] - Проверка расчета калькулятора при сумме больше максимальной
+- [X] - Проверка расчета калькулятора при сумме меньше минимальной
+- [X] - Проверка расчета калькулятора с пустыми данными
+
+
 ### Для запуска необходимо заполнить remote.properties или передать значения:
 
 * browser (default chrome)
-* browserVersion (default 89.0)
+* browserVersion (default 91.0)
 * browserSize (default 1920x1080)
 * remoteDriverUrl (url address from selenoid or grid)
 * videoStorage (url address where you should get video)
@@ -43,15 +53,20 @@
 
 ### Allure отчет </br>
 #### Общая информация
-![allure-test](https://user-images.githubusercontent.com/84721020/127874570-340eb1d7-5348-4c0b-a2fc-941ad98df22e.JPG)
+![allure-test](https://user-images.githubusercontent.com/84721020/131735078-56f5eba7-4ede-486e-93e3-09f90696689b.png)
 #### Список тестов
-![allure-test2](https://user-images.githubusercontent.com/84721020/127875182-c950377a-412b-43d1-b69e-e226e8e4d8da.JPG)
+![allure-test2](https://user-images.githubusercontent.com/84721020/131735404-2f494efe-4afe-411f-964f-b2416c450e8f.png)
+
+### Интеграция с Allure TestOps и Jira </br>
+![launches](https://user-images.githubusercontent.com/84721020/131736707-5e22978d-1fa0-4cdc-b554-d56a07fa192e.png)
+![testcases](https://user-images.githubusercontent.com/84721020/131736737-8326c3b2-7d35-4541-8720-6eb30951e32e.png)
+![jira](https://user-images.githubusercontent.com/84721020/131736756-a3a26034-2b1e-4a04-97b0-510f73b7169d.png)
 
 ### Уведомления в telegram о результатах теста
-![telegram-bot](https://user-images.githubusercontent.com/84721020/127876037-e8a40367-cfd1-454b-b756-8e4b1bae047a.JPG)
+![telegram-bot](https://user-images.githubusercontent.com/84721020/131736399-7b44b1b2-25f7-45a9-b09d-14f610da0d78.png)
 
 ### Уведомления в slack о результатах теста
-![slack-bot](https://user-images.githubusercontent.com/84721020/128090650-4712592d-ffc6-4da9-8348-264c8a16d6fc.JPG)
+![slack](https://user-images.githubusercontent.com/84721020/131736478-a948c517-8dc1-42c1-a46d-0fb6c3005de7.png)
 
 
 
