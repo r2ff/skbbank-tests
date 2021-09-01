@@ -118,7 +118,7 @@ public class SkbBankApiTests{
 
     @Test
     @Tag("api")
-    @DisplayName("Проверка расчета калькулятора при минимальной сумме")
+    @DisplayName("Проверка расчета калькулятора при минимальной сумме, при открытии вклада в офисе")
     void checkCalculationWithoutOnlineOpening() {
         step("Проверяем расчет калькулятора", () -> {
 
@@ -143,7 +143,7 @@ public class SkbBankApiTests{
 
     @Test
     @Tag("api")
-    @DisplayName("Проверка расчета калькулятора с пустым body")
+    @DisplayName("Проверка расчета калькулятора с пустыми данными")
     void checkCalculationWithout() {
         step("Проверяем расчет калькулятора", () -> {
 
