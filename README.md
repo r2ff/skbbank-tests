@@ -62,10 +62,10 @@
 ![testcases](https://user-images.githubusercontent.com/84721020/131736737-8326c3b2-7d35-4541-8720-6eb30951e32e.png)
 ![jira](https://user-images.githubusercontent.com/84721020/131736756-a3a26034-2b1e-4a04-97b0-510f73b7169d.png)
 
-### Уведомления в telegram о результатах теста
+### Уведомления в telegram о результатах теста </br>
 ![telegram-bot](https://user-images.githubusercontent.com/84721020/131736399-7b44b1b2-25f7-45a9-b09d-14f610da0d78.png)
 
-### Уведомления в slack о результатах теста
+### Уведомления в slack о результатах теста </br>
 ![slack](https://user-images.githubusercontent.com/84721020/131736478-a948c517-8dc1-42c1-a46d-0fb6c3005de7.png)
 
 
