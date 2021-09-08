@@ -3,13 +3,9 @@ package tests;
 import annotations.JiraIssue;
 import annotations.JiraIssues;
 import annotations.Layer;
-import annotations.TM4J;
-import com.codeborne.selenide.Condition;
 import helpers.DriverUtils;
-import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -30,7 +26,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class SkbBankTests extends TestBase {
     @Test
     @Tag("web")
-    @TM4J("HOM-230")
     @JiraIssues({@JiraIssue("HOM-230")})
     @DisplayName("Проверка перехода страницу на \"Вклады\" с главной страницы")
     void openDepositTabFromMainPageTest() {
@@ -46,29 +41,28 @@ public class SkbBankTests extends TestBase {
 
     @Test
     @Tag("web")
-    @TM4J("HOM-230")
     @JiraIssues({@JiraIssue("HOM-230")})
     @DisplayName("Проверка заголовка страницы")
     void checkTitleTextTest() {
-        step("Открыть 'https://skbbank.ru/'", () ->
-                open("https://skbbank.ru/"));
+        step("Открыть 'https://skbbank.ru/'", () -> {
+            open("https://skbbank.ru/");
+        });
 
         step("Заголовок должен содержать текст 'Частным клиентам: кредит наличными, интернет банк, вклады, кредитные карты с cash-back, переводы с карты на карту | СКБ-Банк'", () -> {
             String expectedTitle = "Частным клиентам: кредит наличными, интернет банк, вклады, кредитные карты с cash-back, переводы с карты на карту | СКБ-Банк";
             String actualTitle = title();
-
             assertThat(actualTitle).isEqualTo(expectedTitle);
         });
     }
 
     @Test
     @Tag("web")
-    @TM4J("HOM-230")
     @JiraIssues({@JiraIssue("HOM-230")})
     @DisplayName("Проверить консоль браузера на наличие ошибок")
     void consoleShouldNotHaveErrorsTest() {
-        step("Открыть 'https://skbbank.ru/'", () ->
-                open("https://skbbank.ru/"));
+        step("Открыть 'https://skbbank.ru/'", () -> {
+            open("https://skbbank.ru/");
+        });
 
         step("В логах консоли не должно быть слова 'SEVERE'", () -> {
             String consoleLogs = DriverUtils.getConsoleLogs();
@@ -80,7 +74,6 @@ public class SkbBankTests extends TestBase {
 
     @Test
     @Tag("web")
-    @TM4J("HOM-230")
     @JiraIssues({@JiraIssue("HOM-230")})
     @DisplayName("Открыть страницу вклада \"Обыкновенное чудо\"")
     void openDepositAnOrdinaryMiracleTest() {
@@ -96,7 +89,6 @@ public class SkbBankTests extends TestBase {
 
     @Test
     @Tag("web")
-    @TM4J("HOM-230")
     @JiraIssues({@JiraIssue("HOM-230")})
     @DisplayName("Проверка чекбокса при открытии вклада \"Обыкновенное чудо\" онлайн")
     void checkInterestRateWithOnlineOpeningDepositTest() {
@@ -114,12 +106,10 @@ public class SkbBankTests extends TestBase {
 
     @Test
     @Tag("web")
-    @TM4J("HOM-230")
     @JiraIssues({@JiraIssue("HOM-230")})
     @DisplayName("Проверка чекбокса при открытии вклада \"Обыкновенное чудо\" в офисе")
     void checkInterestRateWithOpeningDepositInOfficeTest() {
-        step("Открыть страницу вклада \"Обыкновенное чудо\"", ()
-                -> {
+        step("Открыть страницу вклада \"Обыкновенное чудо\"", () -> {
             open("https://skbbank.ru/chastnym-licam/vklady/obyknovennoe-chudo");
         });
 
@@ -132,12 +122,10 @@ public class SkbBankTests extends TestBase {
 
     @Test
     @Tag("web")
-    @TM4J("HOM-230")
     @JiraIssues({@JiraIssue("HOM-230")})
     @DisplayName("Проверка чекбокса капитализация процентов")
     void checkCheckBoxCapitalizationOfInterestWithDefaultSettingsTest() {
-        step("Открыть страницу вклада \"Обыкновенное чудо\"", ()
-                -> {
+        step("Открыть страницу вклада \"Обыкновенное чудо\"", () -> {
             open("https://skbbank.ru/chastnym-licam/vklady/obyknovennoe-chudo");
         });
 
@@ -152,12 +140,10 @@ public class SkbBankTests extends TestBase {
 
     @Test
     @Tag("web")
-    @TM4J("HOM-230")
     @JiraIssues({@JiraIssue("HOM-230")})
     @DisplayName("Проверка ввода суммы с клавиатуры")
     void checkEnteringAmountOfMoneyWithKeyboard() {
-        step("Открыть страницу вклада \"Обыкновенное чудо\"", ()
-                -> {
+        step("Открыть страницу вклада \"Обыкновенное чудо\"", () -> {
             open("https://skbbank.ru/chastnym-licam/vklady/obyknovennoe-chudo");
         });
 
@@ -172,12 +158,10 @@ public class SkbBankTests extends TestBase {
 
     @Test
     @Tag("web")
-    @TM4J("HOM-230")
     @JiraIssues({@JiraIssue("HOM-230")})
     @DisplayName("Проверка ввода суммы с помощью слайдера")
     void checkEnteringAmountOfMoneyWithKeyboard2() {
-        step("Открыть страницу вклада \"Обыкновенное чудо\"", ()
-                -> {
+        step("Открыть страницу вклада \"Обыкновенное чудо\"", () -> {
             open("https://skbbank.ru/chastnym-licam/vklady/obyknovennoe-chudo");
         });
 
@@ -191,12 +175,10 @@ public class SkbBankTests extends TestBase {
 
     @Test
     @Tag("web")
-    @TM4J("HOM-230")
     @JiraIssues({@JiraIssue("HOM-230")})
     @DisplayName("Проверка периода вклада")
     void checkTimeOfDepositTest() {
-        step("Открыть страницу вклада \"Обыкновенное чудо\"", ()
-                -> {
+        step("Открыть страницу вклада \"Обыкновенное чудо\"", () -> {
             open("https://skbbank.ru/chastnym-licam/vklady/obyknovennoe-chudo");
         });
 
@@ -208,12 +190,10 @@ public class SkbBankTests extends TestBase {
 
     @Test
     @Tag("web")
-    @TM4J("HOM-230")
     @JiraIssues({@JiraIssue("HOM-230")})
     @DisplayName("Проверить информацию о разделе \"Благотворительность\"")
     void checkCharityTextTest() {
-        step("Открыть страницу вклада \"Обыкновенное чудо\"", ()
-                -> {
+        step("Открыть страницу вклада \"Обыкновенное чудо\"", () -> {
             open("https://skbbank.ru/chastnym-licam/vklady/obyknovennoe-chudo");
         });
 

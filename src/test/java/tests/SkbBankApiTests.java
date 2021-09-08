@@ -21,7 +21,6 @@ public class SkbBankApiTests{
     @DisplayName("Проверка расчета калькулятора при минимальной сумме")
     void checkCalculationWithMinAmount() {
         step("Проверяем расчет калькулятора", () -> {
-
             given()
                     .filter(AllureRestAssuredFilter.withCustomTemplates())
                     .contentType("application/x-www-form-urlencoded; charset=UTF-8")
@@ -46,7 +45,6 @@ public class SkbBankApiTests{
     @DisplayName("Проверка расчета калькулятора при сумме меньше минимальной")
     void checkCalculationWithAmountLessThenMinimum() {
         step("Проверяем расчет калькулятора", () -> {
-
             given()
                     .filter(AllureRestAssuredFilter.withCustomTemplates())
                     .contentType("application/x-www-form-urlencoded; charset=UTF-8")
@@ -71,7 +69,6 @@ public class SkbBankApiTests{
     @DisplayName("Проверка расчета калькулятора при максимальной сумме")
     void checkCalculationWithMaxAmount() {
         step("Проверяем расчет калькулятора", () -> {
-
             given()
                     .filter(AllureRestAssuredFilter.withCustomTemplates())
                     .contentType("application/x-www-form-urlencoded; charset=UTF-8")
@@ -96,7 +93,6 @@ public class SkbBankApiTests{
     @DisplayName("Проверка расчета калькулятора при сумме больше максимальной")
     void checkCalculationWithAmountMoreThenMax() {
         step("Проверяем расчет калькулятора", () -> {
-
             given()
                     .filter(AllureRestAssuredFilter.withCustomTemplates())
                     .contentType("application/x-www-form-urlencoded; charset=UTF-8")
@@ -121,7 +117,6 @@ public class SkbBankApiTests{
     @DisplayName("Проверка расчета калькулятора при минимальной сумме, при открытии вклада в офисе")
     void checkCalculationWithoutOnlineOpening() {
         step("Проверяем расчет калькулятора", () -> {
-
             given()
                     .filter(AllureRestAssuredFilter.withCustomTemplates())
                     .contentType("application/x-www-form-urlencoded; charset=UTF-8")
@@ -146,7 +141,6 @@ public class SkbBankApiTests{
     @DisplayName("Проверка расчета калькулятора с пустыми данными")
     void checkCalculationWithout() {
         step("Проверяем расчет калькулятора", () -> {
-
             given()
                     .filter(AllureRestAssuredFilter.withCustomTemplates())
                     .contentType("application/x-www-form-urlencoded; charset=UTF-8")
