@@ -31,7 +31,7 @@ bin/
 out/
 logs/
 target/
-src/test/java/docs
+src/test/java/docs/
 .classpath
 .project
 .settings/org.eclipse.buildship.core.prefs
